@@ -39,6 +39,7 @@ import org.openpnp.machine.neoden4.Neoden4Feeder;
 import org.openpnp.machine.neoden4.Neoden4Signaler;
 import org.openpnp.machine.neoden4.Neoden4SwitcherCamera;
 import org.openpnp.machine.photon.PhotonFeeder;
+import org.openpnp.machine.photon2.PhotonFeederTwo;
 import org.openpnp.machine.rapidplacer.RapidFeeder;
 import org.openpnp.machine.reference.actuator.ThermistorToLinearSensorActuator;
 import org.openpnp.machine.reference.axis.ReferenceCamClockwiseAxis;
@@ -437,6 +438,7 @@ public class ReferenceMachine extends AbstractMachine {
         l.add(RapidFeeder.class);
         l.add(Neoden4Feeder.class);
         l.add(PhotonFeeder.class);
+        l.add(PhotonFeederTwo.class);
         l.addAll(registeredFeederClasses);
         return l;
     }
